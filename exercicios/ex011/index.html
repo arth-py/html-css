@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <!--BOUNCE RATE MENOR-->
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <!--PICTURE: tem uma foto aqui-->
+    <picture>
+        <!-- A menor imagem vem primeiro-->
+        <!--A tag <source:media"(min-widht: ## px):type>
+        Insere outras imagens para que possam ser colocadas caso o tamanho máximo mude-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--A maior imagem é colocada normalmente <img>-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em <abbr title="HyperText Markup Language">HTML</abbr></p>
+    <!--Parâmetro 'preload'-->
+        <!--auto: carrega junto com o site o áudio-->
+        <!--metadata: carrega informações como tempo do áudio, mas não conteúdo -->
+        <!--none:Só carrega o conteúdo depois de interagir -->
+    <audio preload="metadata" autoplay controls loop>
+        <!--autoplay controls : essenciais-->
+        <!--Loop repete o áudio, quando ele termina-->
+        <source src="media/happy-mistake.mp3" type="audio/mpeg"><!--1º a ser carregado-->
+        <source src="media/happy-mistake.mp3" type="audio/ogg"><!--2º a ser carregado-->
+        <source src="media/happy-mistake.mp3" type="audio/wav"><!--3º a ser carregado(MAIS PESADO)-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="media/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

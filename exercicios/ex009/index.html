@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas : A ordem faz diferença</h2>
+    <ol type="A"> <!--Ordered List (OL)--> <!--List Item (li)-->
+        <!--Types 1 A a I i -->
+        <li>Acordar
+        <li>Ligar para joão
+        <li>Tomar café
+        <li>Escovar os dentes</li> <!--O /li é opcional no HTML5-->
+        <li>Ir à faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir ao trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não Ordenadas : A ordem não faz diferença</h2>
+    <ul type="circle"><!--Unordered List(UL)--> <!-- disc square circle-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <br>
+    <h2>Juntando listas versão 1.0</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol> <!--Aninhamento (um dentro do outro)-->
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <!-- Start sempre recebe números-->
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario Losse Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Casltevania</li>
+        </ul>
+    </ol>
+    <!--
+    <dl> DEFINITION LIST
+        <dt>. . .</dt> DEFINITION TITLE
+        <dd>. . .</dd> DEFINITION DESCRIPTION
+    </dl>
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programção para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

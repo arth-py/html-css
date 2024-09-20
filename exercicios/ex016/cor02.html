@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /* Configuração global CSS '*' */
+            height: 100%;
+        }
+        body{
+            /* to left /to right/ to bottom/ to top */
+            /* Cor inicial e cor onde termina*/
+            /* (-360deg)->(+360deg) (ângulo) */
+            /* radial gradient(circle, cor, cor, cor) */
+            /* porcentagens mudam o tamanho */
+            background-image: linear-gradient(280deg, #1E46D6 30%, #D216C5,#FD043F,#FB6D05,#FDCC04);
+            /* Impede a borda no final */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

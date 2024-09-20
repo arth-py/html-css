@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    background-attachment: fixed;
+    background-color: #84E1AD ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px
+}
+header {
+    text-align: center;
+    background-image: linear-gradient(0deg, #1C633B, #3BD47F);
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: -21px;
+    margin-bottom: -16px;
+}
+h1#principal {
+    font-size: 3em;
+    font-family: 'Bebas Neue', Arial,sans-serif           ;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-shadow: 1px 1px 1px black;  
+    margin: 19px;
+}
+p {
+    text-align: justify;
+}
+header > nav {
+    text-align: left;
+}
+header > p {
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 350px;
+}
+nav > p > a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 15px;
+    transition-duration: 2s;
+}
+nav > p > a:hover {
+    background-image:linear-gradient(180deg, #a9bcb2c8, #77897f46 ) ;
+}
+main {
+    background-color: white;
+    margin: 0px auto 18px auto;
+    width: 800px;
+    padding: 1px 20px 10px 20px;
+    border-radius: 6px;
+}
+main > p {
+    text-indent: 30px;
+}
+main > p > a {
+    text-decoration: none;
+    font: 700 1em Arial ;
+    color: #1b673c;
+}
+main > p > a:hover {
+    color: #597e6a8a;
+}
+main > p > a::after {
+    content: '🔗';
+}
+main > h1 {
+    color: #14482b;
+    font-family: 'android', Arial, sans-serif;
+    padding-top: 10px;
+    margin: 0px;
+}
+main > h2 {
+    color: #2c6646;
+    padding-left: 10px;
+    font-family: 'android', Arial, sans-serif;
+    background-image: linear-gradient(90deg, #84e1ac6a, white) ;
+}
+
+div#listas {
+    display: inline-block;
+}
+/*
+Também afeta o source
+*/
+picture > img {
+    /*
+        Não esquecer do display para centralizar imagens
+    */
+    display: block;
+    margin: auto;
+}
+aside {
+    background-color: #C5EBD6 ;
+    border-radius: 10px;
+    margin-top: 9px;
+    padding-bottom: 10px;
+}
+aside > h3 {
+    font-weight: 600;
+    margin-top: -9px;
+    color: white;
+    background-color: #4b936b;
+    border-radius: 6px 6px 0px 0px;
+    padding: 9px 10px 9px 10px;
+}
+aside > p {
+    text-indent: 30px;
+    padding: 5px 10px 10px 19px;
+    margin: 0px
+}
+aside > section > p {
+    padding: 10px;
+}
+aside > p > a {
+    text-decoration: none;
+    font: 700 1em Arial ;
+    color: #1b673c;
+}
+aside > p > a:hover {
+    color: #597e6a8a;
+}
+aside > p > a::after{
+    content: '🔗';
+}
+
+aside > section > div > ul > li ::before{
+    content: ' ✔';
+}
+footer {
+    width: 100%;
+    padding: 5px;
+    background-color: #14482b;
+}
+footer > p {
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
