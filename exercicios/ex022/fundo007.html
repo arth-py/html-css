@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            /*
+            conecta a caixa externa (container) com a div interna
+            */
+            position: relative;
+            /*
+                96% da view-height
+                4% borda
+            */
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            /*
+                posição absoluta, submete o a div interna à caixa externa
+            */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            /*
+                Posiciona a ponta esquerda superior da div no centro
+            */
+            left: 50%;
+            top: 50%;
+            
+            /*
+                Reposiciona, translada a caixa,trocando a ponta pelo centro
+            */
+            transform:translate(-50%,-50%)
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
