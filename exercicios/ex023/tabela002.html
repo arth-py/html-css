@@ -12,6 +12,24 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        /*
+            odd -> ímpar
+            even --> par
+        */
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(255, 255, 255);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td, th {
@@ -23,6 +41,13 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         .num {
             text-align: right;
         }
@@ -43,10 +68,11 @@
     -->
 
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -97,10 +123,22 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>82.352.783</strong></td>
             </tr>
         </tfoot>
     </table>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem minus omnis ullam maiores cumque nihil reprehenderit modi culpa optio eos alias obcaecati quaerat sunt laudantium deleniti accusamus, beatae est? Consequatur ipsum laboriosam natus fuga nemo aut, qui sed minima quam ut vel assumenda aliquam blanditiis dolor nulla sint atque! Soluta est id quas labore, corporis laboriosam dolorem ratione eveniet voluptate vitae, distinctio aspernatur quia accusantium quis magnam, ad cupiditate? Iure earum eaque possimus. Eum perferendis amet rerum veritatis totam? Ratione, iste? Labore architecto laudantium quidem aspernatur similique optio iste iusto corrupti ex, commodi obcaecati dolorem ullam sed, distinctio, unde itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam blanditiis nesciunt exercitationem eveniet, quas veritatis nam necessitatibus aut laudantium possimus porro! Aperiam, voluptatem cumque quas iste velit voluptate! Excepturi, quasi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, quisquam aliquam. Assumenda nulla eos iste accusantium nihil, vero voluptates. Molestias quo nemo hic minima eius obcaecati atque quibusdam architecto, optio veniam, dolore rerum at soluta, tempore labore sequi omnis similique iure. Fugiat magni, provident inventore consectetur, suscipit voluptatum doloremque, voluptate eos itaque pariatur asperiores rerum. Mollitia earum in totam dolor aliquam, alias delectus id cumque ducimus architecto aperiam ea libero ipsam et? Aliquam, officia ea inventore quidem, ipsa voluptatum obcaecati aliquid tenetur molestias, officiis commodi earum consequatur distinctio vero pariatur maiores veniam quisquam recusandae. Eaque enim corrupti assumenda deserunt eos aliquid nostrum reprehenderit officiis, animi laudantium quaerat, error magnam esse suscipit natus! Quis fugit doloremque veniam consectetur nulla nostrum libero obcaecati tempore ullam odit numquam officiis aperiam perspiciatis rem iusto dolore tempora distinctio adipisci repudiandae sed placeat, molestiae itaque. Iusto porro dicta officia ullam soluta iure voluptate neque pariatur suscipit, fuga modi quia praesentium cupiditate accusantium earum temporibus optio odit voluptatem laboriosam nesciunt aut rem molestias repudiandae. Sunt, vitae placeat. Minima, error? Eligendi beatae iusto illum cupiditate, tempora soluta saepe id consectetur deserunt vitae dolor vel corrupti nostrum animi rem ullam reprehenderit tenetur officiis harum molestias. Possimus itaque commodi dolor nisi vel voluptate! Voluptate voluptatem id impedit temporibus exercitationem expedita. Eligendi earum explicabo, quasi ab soluta beatae magnam aspernatur laboriosam quod tempore, provident placeat! Quidem molestias minima nemo, praesentium quasi tempore! Facere, temporibus nemo! Voluptatem illo labore dolorum doloribus necessitatibus consequuntur maxime eius soluta unde! At quibusdam sapiente aliquid non accusamus nesciunt vel assumenda incidunt voluptatum ea, magnam iure? Eaque explicabo magnam officiis laborum voluptate quam, dicta autem iusto molestias minima sint repudiandae optio saepe beatae praesentium omnis? Illo obcaecati eligendi laborum eveniet. Quo dolor accusantium, mollitia est commodi optio non aut reiciendis architecto laborum debitis fuga? Voluptatem, explicabo quo labore fugiat sint veniam quod, saepe mollitia porro eum iste eos, alias eligendi voluptate illum dolores molestias minus. Quam sunt molestias quasi, necessitatibus libero iure, fugiat ab quas eligendi impedit magnam optio veniam maxime nam deserunt exercitationem! Totam nesciunt distinctio est fugit accusantium neque officiis alias repellendus amet quos rerum impedit non quod ratione sequi nihil dolore, cupiditate nisi, adipisci obcaecati praesentium laborum consequatur. Asperiores eius labore nulla dicta. Quis enim voluptate debitis voluptatum eos repellat ab iste, magnam, nihil iusto aspernatur numquam quae aliquam minus modi corrupti neque qui vel perferendis unde recusandae praesentium! Ex suscipit quis molestiae blanditiis eligendi omnis! Quos illum reprehenderit perspiciatis? Corporis, atque deserunt! Ut asperiores sapiente rerum enim neque. Earum, doloribus ratione! Distinctio, in maxime error tempore, perspiciatis quod non repudiandae eum quia placeat sint. Perspiciatis labore ipsum sit accusantium provident facere itaque voluptates laborum velit, cumque minus cupiditate dicta quas, repellat deleniti fuga eaque placeat nemo similique veritatis? Nostrum eius velit explicabo iste magni? Libero, nobis hic saepe possimus nemo amet itaque harum, deserunt dolore voluptatum repellat. Dolor fugit esse molestiae qui nobis porro voluptatibus, provident officia explicabo praesentium earum tenetur illo id totam debitis optio nihil velit ipsum tempora! Ab, commodi. Architecto id sit odio alias, ab deserunt porro dolorem quam tempora, eum in doloremque repellendus ratione repudiandae. Blanditiis itaque sunt totam odit fuga culpa possimus laboriosam placeat at veniam eligendi ipsam veritatis ad soluta ut qui quia sint iure odio nostrum, autem rerum sapiente, illo consequatur! Dolores laboriosam voluptatibus voluptates cumque reiciendis itaque autem quas, laborum porro modi, perferendis ab dolorem aliquid amet perspiciatis recusandae debitis eligendi! Quaerat labore tempora tenetur sed voluptates iure. Ullam quasi voluptatum qui, at veniam fuga quae praesentium ex accusantium doloremque neque voluptatibus nemo dignissimos nobis ipsum placeat? Blanditiis aspernatur obcaecati odio id nisi, reprehenderit quia temporibus sequi nemo, natus quo aut similique nobis quisquam, asperiores magnam sapiente qui repudiandae delectus incidunt labore facere iusto? Laborum at sit rerum a voluptate? Repellendus sint aliquid est omnis id nisi expedita libero dolorum, quis numquam nemo iure tempora odio, velit, nihil fugit doloribus fuga. Ullam sed voluptatibus officiis deserunt ipsum? Possimus delectus similique debitis repellendus ut consequatur rerum quidem explicabo voluptas ipsum in, sit quae libero praesentium, corrupti cum laudantium nemo quisquam commodi numquam nam aliquid odit inventore vel! Sunt voluptates vel doloribus dolorum, ipsam perspiciatis maiores temporibus ducimus ullam recusandae consectetur laudantium ipsa odit fugiat modi commodi hic saepe eveniet veniam adipisci similique vitae. Accusamus perferendis, incidunt commodi neque tenetur explicabo reiciendis laboriosam ex aut corporis consequatur vel et. Vel enim iure maxime eos ex laudantium voluptatem est sequi officia accusantium exercitationem quia laborum a et atque, odio dolore eius delectus earum ratione quibusdam dolor. Debitis cupiditate tempore quia nostrum perferendis obcaecati totam omnis libero ad facere autem aspernatur eos nisi a illum unde rerum dolorum repellat harum tempora quisquam, placeat doloribus excepturi rem. Veniam placeat esse explicabo perferendis cumque facilis. Quae corporis consequuntur maiores culpa nemo quam dicta laborum, molestiae quaerat, eius harum laboriosam atque voluptatem, eos ullam. Exercitationem dolores labore suscipit, accusamus iure libero excepturi veritatis? Eos reiciendis dolorum consequatur, nisi amet quos, at veniam sit dolores ratione placeat culpa obcaecati. Exercitationem obcaecati amet voluptates laborum culpa architecto quo ut doloremque est vel deserunt ipsam voluptatem doloribus corporis voluptatibus ex consectetur dolor assumenda, tenetur iusto eaque! Perferendis ullam incidunt et a iste? Consectetur ipsam itaque, ipsum, nihil natus ad quaerat maxime cum nobis tempora exercitationem explicabo nesciunt accusantium magnam vel dolores quasi facere perspiciatis expedita libero dolore neque. Odit dolores et nisi facilis officia vitae, optio repellat corporis sequi delectus quidem nobis, ipsum atque pariatur repudiandae molestias eaque? Laudantium ipsa expedita nostrum minus molestiae ullam vero esse iure pariatur neque cumque veniam sint earum est repudiandae dolore aspernatur, magni reprehenderit soluta similique id. Harum deleniti itaque numquam, saepe aliquid doloribus a fugit illum accusantium corporis praesentium enim laboriosam totam maiores optio. Laboriosam vitae autem animi mollitia aut ut harum iusto labore assumenda accusantium beatae magnam laudantium minus iste, officia asperiores cum eligendi nesciunt, et est, laborum eaque tempora provident quidem! Voluptate alias neque aliquam laudantium. Aspernatur qui nulla atque libero quibusdam facilis, eos odio magnam illum quam aperiam velit sint vel nisi necessitatibus aliquid error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita eos nostrum, consequatur nihil sed quia aut commodi cum, vitae laborum, error sequi accusamus illum. Necessitatibus nobis assumenda doloribus laudantium consectetur optio! Est adipisci dolor accusantium illo iste at deleniti libero reiciendis eaque. Iste facere, libero odio quo placeat dolor, nulla ad dolore explicabo iure aspernatur, esse architecto beatae natus ex ipsum quia mollitia laboriosam quasi veniam nam repudiandae deleniti. Ad veniam itaque, consequuntur quo commodi nesciunt id sapiente, inventore obcaecati doloremque eligendi cupiditate quam, unde doloribus! Architecto sequi, dolores voluptas incidunt perferendis quo nobis obcaecati facere tempora ab ratione!
+    <p>A tag `position` é um atributo utilizado em linguagens de marcação como HTML e CSS para controlar a posição de um elemento na página web. Existem diferentes valores que podem ser atribuídos a essa propriedade, sendo os principais: <br>
+
+        1. `static`: É o valor padrão. O elemento é posicionado conforme o fluxo normal do documento.<br>
+          
+        2. `relative`: O elemento é posicionado em relação à sua posição original no documento, podendo ser deslocado utilizando as propriedades `top`, `right`, `bottom` e `left`. <br>
+        
+        3. `absolute`: O elemento é posicionado em relação ao seu ancestral posicionado mais próximo, se não houver ele é posicionado em relação ao ;$'html`>. Pode ser deslocado também com as propriedades `top`, `right`, `bottom` e `left`.<br>
+        
+        4. `fixed`: O elemento é posicionado em relação à viewport do navegador, ou seja, ele permanece fixo na tela mesmo quando ela é rolada. Também pode ser deslocado usando `top`, `right`, `bottom` e `left`.<br>
+        
+        5. `sticky`: O elemento é posicionado com base na posição de rolagem. Ele se comporta como `relative` até que ele atinja um determinado ponto na tela, então se torna `fixed`.<br></p>
 </body>
 </html>
