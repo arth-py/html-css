@@ -12,7 +12,13 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!--
+            MÉTODOS GET E POST
+
+            GET- COLOCA OS DADOS NA URL
+            POST - NÃO COLOCA OS DADOS NA URL
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
         </p>
