@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
-h1{
-    display: block;
+/*  APARELHO EM PÉ (PORTRAIT) */
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
