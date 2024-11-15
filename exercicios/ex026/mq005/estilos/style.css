@@ -29,7 +29,7 @@ span#burguer {
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 span#burguer:hover {
@@ -47,6 +47,11 @@ menu a {
     border-top: 2px solid gray;
 }
 
+menu a:hover {
+    background-color: #D3D3D3;
+    color: black;
+}
+
 menu { 
     display: none;
 }
@@ -59,7 +64,7 @@ main {
     background-color: white;
     margin: 15px auto 0px auto;
     padding: 10px;
-    max-width: 768px;
+    max-width: 90vw;
     border-radius: 10px;
 }
 
