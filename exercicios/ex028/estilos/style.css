@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,nav {
+    display: inline-block;
+}
+
+nav {
+    width: 500px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+body {
+    background-color: #E3E3E1;
+}
+
+header {
+    background-color: #828282;
+}
+
+main {
+
+    background-color: white;
+    width: 97vw;
+}
+
